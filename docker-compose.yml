@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  wellness_challenge:
+    build: ./
+    container_name: wellness_challenge
+    image: wellness_challenge
+    ports: 
+        - 80:6543
