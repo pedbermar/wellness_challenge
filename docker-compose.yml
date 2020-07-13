@@ -6,3 +6,28 @@ services:
     image: wellness_challenge
     ports: 
         - 80:6543
+    depends_on: 
+        - database
+    links:
+        - database
+        - cache
+    
+  database: 
+    image: bitnami/mongodb:latest
+    container_name: mongodb
+    environment:
+      - MONGODB_USERNAME=wellness_challenge
+      - MONGODB_PASSWORD=drCe6CVXn1IQAGmWTcPuRmgy26V82jQc
+      - MONGODB_DATABASE=wellness_challenge
+
+    volumes: 
+        - mongo-data:/data/db
+          
+  cache:
+    image: 'bitnami/redis:latest'
+    container_name: redis
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+
+volumes: 
+  mongo-data:

@@ -10,6 +10,11 @@ requires = [
     'pyramid',
     'pyramid_debugtoolbar',
     'waitress',
+    'pymongo',
+    'pandas',
+    'pyramid-jwt',
+    'pyramid_beaker',
+    'bcrypt'
     ]
 
 tests_require = [
@@ -19,7 +24,7 @@ tests_require = [
     ]
 
 setup(name='wellness_challenge',
-      version='0.0',
+      version='0.1',
       description='wellness_challenge',
       long_description=README + '\n\n',
       classifiers=[

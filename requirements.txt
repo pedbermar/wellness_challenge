@@ -1,1 +1,4 @@
 pyramid
+pyramid_debugtoolbar
+pymongo
+waitress
