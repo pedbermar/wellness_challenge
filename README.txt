@@ -24,7 +24,7 @@ Endpoints
 
  - http://localhost/metrics/{metric_type}/{start}/{end}
 
-    - start/end format: YYMMDDhhmmss
+    - start/end format: YYYYMMDDhhmmss
     - type:
         - power_avg
         - power_factor_avg
