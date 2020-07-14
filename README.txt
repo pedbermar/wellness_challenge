@@ -43,9 +43,9 @@ Endpoints
 
     returns daily average of energy (if type is equal to 'energy') or reactive energy (type equal to 'reactive_energy')
 
- - http://localhost/login
+ - http://localhost/login?user=default&password=default
 
-    - returns an authentication token for subsecuents API type (user=default, password = default)
+    - returns an authentication token for subsecuents API calls (user=default, password = default)
     - Access control to API methods are disable due to lack of time.
 
 Database
