@@ -2,7 +2,7 @@ FROM python:3.7
 
 
 RUN apt-get update
-RUN apt-get install -y python-pip
+RUN apt-get install -y python3-pip
 
 WORKDIR /opt/wellness_challenge/
 
