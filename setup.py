@@ -14,7 +14,8 @@ requires = [
     'pandas',
     'pyramid-jwt',
     'pyramid_beaker',
-    'bcrypt'
+    'bcrypt',
+    'numpy'
     ]
 
 tests_require = [
